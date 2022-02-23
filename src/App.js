@@ -1,4 +1,3 @@
-import './App.css';
 import ShoppingCartButton from './components/ShoppingCartButton/ShoppingCartButton';
 
 function App() {
