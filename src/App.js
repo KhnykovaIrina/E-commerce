@@ -1,11 +1,12 @@
-import ShoppingCartButton from './components/ShoppingCartButton/ShoppingCartButton';
+import ShoppingCartButton from './components/ShoppingCartButton';
 
 function App() {
   return (
     <div>
-      <ShoppingCartButton />
-    </div> 
- 
+      <ShoppingCartButton text='Add to Cart - $250' />
+      <ShoppingCartButton text='Add to Cart - $250' disabled={true} />
+      <ShoppingCartButton text='Add to Cart - $250' />
+    </div>
   );
 }
 
