@@ -4,7 +4,7 @@ import BlueButton from "./components/BlueButton/BlueButton";
 
 function App() {
     return (
-        <Container >         
+        <Container >     
             <Row className="text-center">
                 <Col md={{ span: 6, offset: 3 }}>
                     <h6 className="mt-3">Main - 5</h6>
