@@ -1,6 +1,6 @@
 import React from "react";
-import "./ShoppingCartButton.css";
-import {Button} from "react-bootstrap";
+import "../ShoppingCartButton/ShoppingCartButton.css";
+import { Button } from "react-bootstrap";
 
 const ShoppingCartButton = (props) => {
     const text = props.text;
@@ -8,7 +8,7 @@ const ShoppingCartButton = (props) => {
     const backgroundColor = props.backgroundColor;
 
     return (
-        <Button variant="dark" className="rounded-0" style={{backgroundColor: backgroundColor}} disabled={disabled}>
+        <Button id="start" variant="dark" className="rounded-0" style={{ backgroundColor: backgroundColor }} disabled={disabled}>
             {text}
         </Button>
     );
