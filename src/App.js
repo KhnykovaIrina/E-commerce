@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ShoppingCartButton from './components/ShoppingCartButton/ShoppingCartButton';
+import ShoppingCartButton from './components/ShoppingCartButton';
 
 function App() {
     return (
