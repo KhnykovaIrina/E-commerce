@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import BlueButton from "./components/BlueButton/BlueButton";
+import BlueButton from "./components/BlueButton";
 
 function App() {
     return (
