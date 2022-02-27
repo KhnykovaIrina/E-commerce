@@ -6,7 +6,7 @@ function App() {
     return (
         <Container >
             <Row className="text-center">
-                <Col md={{ span: 6, offset: 3 }}>
+                <Col md={{ span: 4, offset: 4 }}>
                     <h6 className="mt-3">Main - 6</h6>
                     <div>
                         <OutlineButton text="Shop All" />
