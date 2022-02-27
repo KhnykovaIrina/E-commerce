@@ -1,6 +1,6 @@
 #start {
-   min-width: 260px;
-   min-height: 80px;
+   width: 260px;
+   height: 80px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font: 1.5em sans-serif;
    margin-top: 5px;
