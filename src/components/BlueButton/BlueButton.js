@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Button } from "react-bootstrap";
-import "../BlueButton/BlueButton.css";
+import "./BlueButton.css";
 
 const BlueButton = (props) => {
    const text = props.text;
