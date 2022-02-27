@@ -1,5 +1,5 @@
 import React from "react";
-import "../ShoppingCartButton/ShoppingCartButton.css";
+import "./ShoppingCartButton.css";
 import { Button } from "react-bootstrap";
 
 const ShoppingCartButton = (props) => {
