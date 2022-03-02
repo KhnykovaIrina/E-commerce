@@ -1,0 +1,18 @@
+.hr {
+    display: inline-block;
+    margin: 3px;
+    font-family: SF Pro Display sans-serif;
+}
+
+ul {
+    font-size: 22px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#start {
+    width: 55px;
+    height: 55px;
+}
+
+
