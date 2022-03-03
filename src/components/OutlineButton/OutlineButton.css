@@ -1,8 +1,6 @@
-.start {
+.btn  {
    width: 260px;
-   height: 80px;   
-   font: 1.5em sans-serif;
+   height: 80px;
    margin-top: 5px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   border-radius: 0;
+   font-family: "Arial";
 }
