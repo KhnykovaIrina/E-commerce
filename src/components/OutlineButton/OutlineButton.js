@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 const OutlineButton = (props) => {
     const text = props.text;   
     return (
-        <Button id="start" variant="outline-dark" className="rounded-0">{text}</Button>
+        <Button variant="outline-dark" className="start">{text}</Button>
     );
 };
 
