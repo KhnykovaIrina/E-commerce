@@ -1,4 +1,6 @@
 import React from "react";
+import ShoppingCartButton from './components/ShoppingCartButton';
+import ButtonOnColor from "./components/ButtonOnColor/ButtonOnColor";
 import {Container} from "react-bootstrap";
 import OutlineButton from './components/OutlineButton';
 import BlueButton from "./components/BlueButton";
@@ -9,6 +11,9 @@ function App() {
 			<Container className="text-center">
 				<BlueButton text="Buy Now"/>
 				<OutlineButton text="Shop All"/>
+				<ShoppingCartButton text="Add to Cart - $250"/>
+				<ShoppingCartButton text="Add to Cart - $250" disabled={true}/>
+				<ButtonOnColor text="Add to Cart - $250"/>
 				<ProductSizes
 						option={[
 							{label: "XS", value: "1"},
