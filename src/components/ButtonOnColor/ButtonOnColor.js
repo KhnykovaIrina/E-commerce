@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../ShoppingCartButton/scss/ShoppingCartButton.scss";
 import { Container } from "react-bootstrap";
+import "./scss/ButtonOnColor.scss";
 
-export default function ButtonOnLick(props) {
+export default function ButtonOnColor(props) {
 	const [cls, setCls] = useState("green");
 	const text = props.text;
 

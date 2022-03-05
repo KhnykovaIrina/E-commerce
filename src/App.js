@@ -1,6 +1,6 @@
 import React from "react";
 import ShoppingCartButton from './components/ShoppingCartButton';
-import ButtonOnLick from "./components/ButtonOnLick/ButtonOnСlick";
+import ButtonOnColor from "./components/ButtonOnColor/ButtonOnColor";
 import {Container} from "react-bootstrap";
 import OutlineButton from './components/OutlineButton';
 import BlueButton from "./components/BlueButton";
@@ -13,7 +13,7 @@ function App() {
 				<OutlineButton text="Shop All"/>
 				<ShoppingCartButton text="Add to Cart - $250"/>
 				<ShoppingCartButton text="Add to Cart - $250" disabled={true}/>
-				<ButtonOnLick text="Add to Cart - $250"/>
+				<ButtonOnColor text="Add to Cart - $250"/>
 				<ProductSizes
 						option={[
 							{label: "XS", value: "1"},
