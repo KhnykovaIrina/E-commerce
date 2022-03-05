@@ -8,8 +8,8 @@ const ShoppingCartButton = (props) => {
 
 	return (
 			<Container className="text-center">
-				<Button variant="dark" className={"rounded-0" + " " + "btnAdd"}
-				        style={{fontSize: 25}}
+				<Button variant="dark" className="rounded-0"
+				        style={{fontSize: 25, width: 400, height:70}}
 				        disabled={disabled}>{text}
 				</Button>
 			</Container>
