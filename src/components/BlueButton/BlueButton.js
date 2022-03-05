@@ -1,13 +1,17 @@
 import React from 'react'
-import { Button } from "react-bootstrap";
-import "./BlueButton.css";
+import {Button, Container} from "react-bootstrap";
+import "./scss/BlueButton.scss";
 
 const BlueButton = (props) => {
-   const text = props.text;
+	const text = props.text;
 
-   return (
-      <Button id="blue" variant='primary' className="rounded-0">{text}</Button>
-   );
+	return (
+			<Container className="text-center">
+				<Button variant='primary' className="rounded-0 blue"
+				        style={{fontSize: 25}}
+				>{text}</Button>
+			</Container>
+	);
 };
 
 export default BlueButton;
