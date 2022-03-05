@@ -1,14 +1,10 @@
 .sizeX {
   display: inline-block;
-  margin: 2px;
+  margin: 3px;
 }
 
-.start {
-  width: 55px;
-  height: 55px;
-  font-weight: 500;
-  font-size: 20px;
-  margin-top: 10px;
+ul {
+  padding-top: 20px;
 }
 
 /*# sourceMappingURL=ProductSizes.css.map */
