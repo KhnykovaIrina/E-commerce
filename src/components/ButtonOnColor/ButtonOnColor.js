@@ -9,15 +9,17 @@ export default function ButtonOnColor(props) {
 	return (
 			<Container className="text-center">
 				<style>{`
-        .red {background-color: #8ecae6}
-        .green {background-color: #ffb703}
+        .bluebonnet {background-color: #8ecae6}
+        .orange {background-color: #ffb703}
       `}</style>
+				<div className="btnAdd">
 				<button
-						className={cls + " " + "btnAdd" + " " + "rounded-0"}
-						style={{fontSize: 25, fontFamily: "-moz-initial"}}
-						onClick={() => setCls((cls) => (cls === "red" ? "green" : "red"))}
+						className={cls}
+						style={{fontSize: 25, width: 400, height:70}}
+						onClick={() => setCls((cls) => (cls === "bluebonnet" ? "orange" : "bluebonnet"))}
 				>{text}
 				</button>
+				</div>
 			</Container>
 	);
 }
