@@ -7,7 +7,7 @@ function App() {
 			<div>
 				<ShoppingCartButton text="Add to Cart - $250"/>
 				<ShoppingCartButton text="Add to Cart - $250" disabled={true}/>
-				<ButtonOnLick text="Add to Cart - $250" disabled={true}/>
+				<ButtonOnLick text="Add to Cart - $250"/>
 			</div>
 	);
 }
