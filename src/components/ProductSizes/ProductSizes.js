@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Container} from "react-bootstrap";
-import './ProductSizes.css';
+import './scss/ProductSizes.scss';
 
 function ProductSizes() {
 	const size = [
@@ -14,7 +14,7 @@ function ProductSizes() {
 	];
 
 	return (
-			<Container>
+			<Container className="text-center">
 				<ul>
 					{size.map((size) => (
 							<UlSize key={size.value} size={size}/>
@@ -27,8 +27,10 @@ function ProductSizes() {
 function UlSize(props) {
 	const size = props.size;
 	return (
-			<li className="hr">
-				<Button variant="outline-secondary" id="start" className="rounded-0">{size.label}</Button>
+			<li className="sizeX">
+				<Button variant="outline-secondary" className="rounded-0 start"
+				        style={{color: "black", textAlign: "center"}}
+				>{size.label}</Button>
 			</li>
 	);
 }
