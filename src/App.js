@@ -1,4 +1,5 @@
 import React from "react";
+import OutlineButton from './components/OutlineButton';
 import {Container} from "react-bootstrap";
 import BlueButton from "./components/BlueButton";
 import ProductSizes from "./components/ProductSizes";
@@ -18,6 +19,7 @@ function App() {
 							{label: "3XL", value: "7"},
 						]}
 				/>
+          <OutlineButton text="Shop All"/>
 			</Container>
 	);
 }
