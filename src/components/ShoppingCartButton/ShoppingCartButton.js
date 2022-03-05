@@ -1,6 +1,6 @@
 import React from "react";
-import "./ShoppingCartButton.css";
-import {Button} from "react-bootstrap";
+import "./scss/ShoppingCartButton.scss";
+import {Button, Container} from "react-bootstrap";
 
 const ShoppingCartButton = (props) => {
 	const text = props.text;
@@ -8,12 +8,15 @@ const ShoppingCartButton = (props) => {
 	const backgroundColor = props.backgroundColor;
 
 	return (
-			<div className="btnAdd">
-				<Button variant="dark" className="rounded-0" style={{backgroundColor: backgroundColor}}
-				        disabled={disabled}>{text}</Button>
-			</div>
+			<Container className="text-center">
+				<div>
+					<Button variant="dark" className="rounded-0 btnAdd"
+					        style={{backgroundColor: backgroundColor, fontSize: 25, fontFamily: "-moz-initial"}}
+					        disabled={disabled}>{text}
+					</Button>
+				</div>
+			</Container>
 	);
 };
 
 export default ShoppingCartButton;
-
