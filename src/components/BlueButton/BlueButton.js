@@ -4,9 +4,8 @@ import "./scss/BlueButton.scss";
 
 const BlueButton = (props) => {
 	const text = props.text;
-
 	return (
-			<Container className="text-center">
+			<Container>
 				<Button variant='primary' className="rounded-0 blue"
 				        style={{fontSize: 25}}
 				>{text}</Button>
