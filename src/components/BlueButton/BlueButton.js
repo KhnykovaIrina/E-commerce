@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button, Container} from "react-bootstrap";
-import "./scss/BlueButton.scss";
+import "./css/BlueButton.css";
 
 const BlueButton = (props) => {
 	const text = props.text;
