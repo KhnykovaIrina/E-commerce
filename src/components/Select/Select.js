@@ -11,7 +11,6 @@ const Select = ({ options, defaultValue }) => {
       <div>
          <select
             className="form-select"
-            sizevalue={sizevalue}
             onChange={changeSelect}
          >
             <option disabled>{defaultValue}</option>
