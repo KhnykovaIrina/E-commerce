@@ -1,0 +1,13 @@
+.carousel {
+   margin-top: 20px;
+   width: 800px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 40px;
+}
+
+.image {
+   height: 500px;
+   width: 800px;
+   text-align: center;
+}

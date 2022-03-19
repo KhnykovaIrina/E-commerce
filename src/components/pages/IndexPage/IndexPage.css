@@ -1,0 +1,9 @@
+.wrapper{
+  text-align: center;
+}
+
+.btn {
+width:150px;
+border:1px solid black;
+font-weight: 600;
+}
