@@ -1,0 +1,19 @@
+.list-unstyled {
+   text-align: center;
+}
+
+li {
+   display: inline;
+   margin: 15px;
+}
+
+a {
+   color: black;
+   font-weight: bold;
+   font-size: 24px;
+}
+
+a:link {
+   text-decoration: none;
+ 
+}

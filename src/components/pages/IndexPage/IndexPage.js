@@ -1,5 +1,6 @@
 import React from 'react';
 import CarouselBox from '../../common/CarouselBox/CarouselBox';
+import Brands from '../../elements/Brands/Brands';
 import './IndexPage.css';
 
 const IndexPage = () => {
@@ -9,6 +10,7 @@ const IndexPage = () => {
          <p> Discription</p>
          <button type="button" className="btn btn-light">Shop all</button>
          <CarouselBox />
+         <Brands />
       </div>
    );
 };
