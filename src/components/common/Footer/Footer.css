@@ -1,0 +1,39 @@
+.footer {
+   background: #f8f4f4;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+
+.abc {
+   text-align: left;
+}
+
+.row {
+   padding: 30px 0 0 0 ;
+}
+
+.form-control {
+   border-right: none;
+   border:1px solid #6c757d;
+}
+
+ .btn {
+   border-left: none;
+   background-color: white;
+}
+
+a:hover {
+   color: black;
+   font-weight:600;
+}
+
+li a {
+   text-decoration: none;
+   color: rgb(92, 91, 91);
+}
+
+.input-group {
+   width: 300px;
+   height: 30px;
+}
