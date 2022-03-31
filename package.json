@@ -9,10 +9,9 @@
     "react-bootstrap": "^2.1.2",
     "react-bootstrap-icons": "^1.7.2",
     "react-dom": "^17.0.2",
-    "react-highlight": "^0.14.0",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
-    "react-syntax-highlighter": "^15.5.0"
+    "sass": "^1.49.10"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,6 +39,8 @@
   },
   "devDependencies": {
     "@types/react-syntax-highlighter": "^13.5.2",
-    "highlight.js": "^11.5.0"
+    "highlight.js": "^11.5.0",
+    "react-highlight": "^0.14.0",
+    "react-syntax-highlighter": "^15.5.0"
   }
 }

@@ -1,0 +1,10 @@
+.btnOut {
+  max-width: 190px;
+  min-width: 190px;
+  max-height: 70px;
+  min-height: 70px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 24px !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

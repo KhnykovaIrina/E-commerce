@@ -1,19 +1,21 @@
 import React from 'react';
-import CarouselBox from '../../common/CarouselBox/CarouselBox';
-import ShoppingCartButton from '../../common/ShoppingCartButton';
+import CarouselBox from '../../elements/CarouselBox/CarouselBox';
 import Brands from '../../elements/Brands/Brands';
-import './IndexPage.css';
+import NavBar from "../../common/NavBar";
+import './IndexPage.scss';
 
 const IndexPage = () => {
    return (
-      <div className="wrapper">
-         <ShoppingCartButton />
-         <h1> Better clothing for the planet</h1>
-         <p> Discription</p>
-         <button type="button" className="btn btn-light btn-shopAll">Shop all</button>
-         <CarouselBox />
-         <Brands />
-      </div>
+      <>
+          <NavBar />
+          <div className="wrapper">
+              <h1>Better clothing for the planet</h1>
+              <p className='text-muted promo-text'>We are pleased to offer all Marriott associates who work for Marriott International or a managed property a 30% discount</p>
+              <button type="button" className="btn btn-light btn-shopAll">Shop all</button>
+          </div>
+          <CarouselBox />
+          <Brands />
+      </>
    );
 };
 

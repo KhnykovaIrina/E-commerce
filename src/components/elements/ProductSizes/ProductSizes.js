@@ -1,5 +1,5 @@
 import React from "react";
-import './css/ProductSizes.css';
+import './ProductSizes.css';
 import {Container, Button} from "react-bootstrap";
 
 const ProductSizes = ({option}) => {

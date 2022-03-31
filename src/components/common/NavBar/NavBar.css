@@ -1,0 +1,22 @@
+.boxS {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 500;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+.relative {
+  width: 200px;
+}
+.navbar-brand {
+  padding-top: 0.2rem !important;
+}
+.colorLogin {
+  color: black !important;
+  font-family: "Segoe UI", sans-serif;
+}
+.btnBag {
+  border: 0;
+  background: #f8f9fa;
+  padding-left: 28px;
+  margin-top: -2px;
+}

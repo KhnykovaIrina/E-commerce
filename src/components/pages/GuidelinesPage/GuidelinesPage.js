@@ -3,9 +3,9 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import Accordion from '../../common/Accordion/Accordion';
-import Select from '../../common/Select/Select';
-import Number from '../../common/Number/Number';
+import Accordion from '../../common/Accordion';
+import Select from '../../common/Select';
+import Number from '../../elements/Number';
 import './GuidelinesPage.css';
 
 const GuidelinesPage = () => {
