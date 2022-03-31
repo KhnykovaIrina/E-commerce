@@ -1,0 +1,44 @@
+.container {
+   max-width: 800px;
+}
+
+.wrapper-component {
+   max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 5px;
+   border: 2px solid #dee2e6;
+   background-color: #f2f4f7;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 0;
+}
+
+.nav-tabs {
+   margin-left: 2px;
+}
+
+pre {
+margin: 0;
+}
+
+.list-components {
+   padding-left: 0;
+   font-style: italic;
+}
+
+#t1,#t2,#t3 {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   font-style: italic;
+   font-weight: 700;
+}
+
+.link {
+   color: black;
+   font-weight: bold;
+   font-size: 20px;
+   text-decoration: none;
+}
+

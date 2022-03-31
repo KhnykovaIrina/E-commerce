@@ -13,12 +13,12 @@ const Footer = () => {
                   <p>Subscribe to our newsletter to get our latest news.</p>
                   <div className="input-group mb-3">
                      <input className="form-control" type="email" name="email" placeholder="Enter email address" />
-                     <button className="btn btn-outline-secondary" type="button">Sign up</button>
+                     <button className="btn btn-outline-secondary " type="button">Sign up</button>
                   </div>
                </div>
                <div className="col-6 col-lg-2 mb-3">
                   <h5>Shop</h5>
-                  <ul className="list-unstyled">
+                  <ul className="list-unstyled list-link">
                      <li><Link to="#">Women's</Link></li>
                      <li><Link to="#">Men's</Link></li>
                      <li><Link to="#">Kids'</Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                </div>
                <div className="col-6 col-lg-2  mb-3 ">
                   <h5>Help</h5>
-                  <ul className="list-unstyled">
+                  <ul className="list-unstyled list-link">
                      <li><Link to="#">Help Center</Link></li>
                      <li><Link to="#">Order status</Link></li>
                      <li><Link to="#">Size chart</Link></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                </div>
                <div className="col-6 col-lg-2  mb-3">
                   <h5>About</h5>
-                  <ul className="list-unstyled">
+                  <ul className="list-unstyled list-link">
                      <li><Link to="#">About us</Link></li>
                      <li><Link to="#">Responsibility</Link></li>
                      <li><Link to="#">Technology & Innovation</Link></li>

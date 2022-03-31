@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './Accordion.css';
 
-const Accordion = ({ accordionData }) => {
-   const [selected, setSelected] = useState(null);
+const Accordion = ({accordionData}) => {
 
+   const [selected, setSelected] = useState(null);
+   
    return (
       <div>
-         <h3>Order Infomation</h3>
+         <h3 className="accordion-heading">Order Infomation</h3>
          <div className="accordion">
             {accordionData.map((item, i) => (
                <div key={i} className="item">
@@ -19,8 +20,8 @@ const Accordion = ({ accordionData }) => {
             ))}
          </div>
       </div>
+     
    );
 };
-
 
 export default Accordion;

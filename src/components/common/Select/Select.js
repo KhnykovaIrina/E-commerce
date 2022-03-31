@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Select.css';
 
-const Select = ({ options, defaultValue}) => {
+const Select = ({ options, defaultValue }) => {
 
    const [sizevalue, setValue] = useState('')
-   
+
    function changeSelect(event) {
       setValue(event.target.value);
    }
@@ -25,4 +25,5 @@ const Select = ({ options, defaultValue}) => {
       </div>
    );
 };
+
 export default Select;

@@ -10,7 +10,7 @@ const IndexPage = () => {
          <ShoppingCartButton />
          <h1> Better clothing for the planet</h1>
          <p> Discription</p>
-         <button type="button" className="btn btn-light">Shop all</button>
+         <button type="button" className="btn btn-light btn-shopAll">Shop all</button>
          <CarouselBox />
          <Brands />
       </div>

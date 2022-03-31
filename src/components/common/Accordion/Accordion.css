@@ -1,13 +1,16 @@
 .accordion {
-  max-width: 700px;
+  max-width: 90%;
   background-color: rgb(212, 211, 211);
   border: none;
   border-top: 2px solid rgb(80, 80, 80);
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h3 {
-  text-align: left;
-  margin-bottom: 5px;
+.accordion-heading {
+  text-align: center;
+  margin: 5px;
 }
 
 .item {
@@ -19,7 +22,6 @@ h3 {
   font-size: 20px;
   font-weight: 500;
   color: rgb(114, 112, 112);
-
 }
 
 .accordion-title {
@@ -35,11 +37,9 @@ h3 {
 }
 
 .accordion-content {
-
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-
 }
 
 .accordion-show {

@@ -1,12 +1,7 @@
 .footer {
-   background: #f8f4f4;
-   position: fixed;
+   background: #f0f0f1d2;
    bottom: 0;
    width: 100%;
-}
-
-.abc {
-   text-align: left;
 }
 
 .row {
@@ -18,17 +13,17 @@
    border:1px solid #6c757d;
 }
 
- .btn {
+ .btn-outline-secondary {
    border-left: none;
    background-color: white;
 }
 
-a:hover {
+.list-link a:hover {
    color: black;
    font-weight:600;
 }
 
-li a {
+.list-link a {
    text-decoration: none;
    color: rgb(92, 91, 91);
 }

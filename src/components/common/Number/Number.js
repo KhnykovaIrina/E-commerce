@@ -28,7 +28,7 @@ const Number = ({ min, max, INITIAL_NUMBER }) => {
 
    return (
       <div className="counter">
-         <p>Quantity</p>
+         <p className="title">Quantity</p>
          <div className="counter-wrapper">
             <button id="decrement" className="button" onClick={onDecrement} disabled={count === min}>-</button>
             <input className="input" value={count} onChange={inputChange} />
