@@ -1,0 +1,69 @@
+.login-form {
+   max-width: 460px;
+   padding: 1.5rem;
+   margin: 40px auto;
+   border: 1px solid #ced4da;
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.login-form-title {
+   margin: 0;
+   margin-bottom: 10px;
+}
+
+button.btn,
+input.form-control {
+   border-radius: 0;
+}
+
+.checkbox-wrapper {
+   display: flex;
+   justify-content: space-around;
+}
+
+.link-recovery-password {
+   max-width: 150px;
+}
+
+.link-recovery-password a {
+   color: gray;
+   text-decoration: none;
+   align-self: end;
+}
+
+.link-recovery-password a:hover {
+   color: black;
+   font-weight: 500;
+}
+.link-signup {
+   margin-left:45%;
+}
+
+.link-signup a  {
+   color: gray;
+   text-decoration: none;
+   align-self: end;
+}
+
+.link-signup a:hover {
+   color: black;
+   font-weight: 500;
+}
+
+.form-check {
+   max-width: 150px;
+   align-self: start;
+   padding-left: 0;
+   margin-right: 135px;
+}
+
+.form-check-input {
+   margin-right: 5px;
+}
+
+.form-check .form-check-input {
+   margin-left: 0;
+}
+.checkbox-wrapper button {
+   width:150px;
+}

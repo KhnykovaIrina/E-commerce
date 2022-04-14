@@ -2,7 +2,6 @@ import React from 'react';
 import CarouselBox from '../../elements/CarouselBox/CarouselBox';
 import Brands from '../../elements/Brands/Brands';
 import NavBar from "../../common/NavBar";
-import './IndexPage.scss';
 
 const IndexPage = () => {
    return (
