@@ -5,11 +5,11 @@ import GuidelinesPage from '../pages/GuidelinesPage';
 import IndexPage from "../pages/IndexPage";
 import LoginPage from '../pages/LoginPage';
 import PasswordRecoveryPage from '../pages/PasswordRecoveryPage';
+import SignUpPage from '../pages/SignUpPage/SignUpPage';
 import SuccessPage from '../pages/SuccessPage';
 import ForgotPassworPage from '../pages/ForgotPasswordPage';
 
 
- 
 
 const ROUTES = () => {
    return (
@@ -19,8 +19,8 @@ const ROUTES = () => {
          <Route path={PATH.SHOPPING_CART_PAGE}></Route>
          <Route path={PATH.LOGIN_PAGE} element={<LoginPage />}></Route>
          <Route path={PATH.PASSWORD_RECOVERY_PAGE} element={<PasswordRecoveryPage />}></Route>
-         <Route path={PATH.SIGNUP_PAGE}></Route>
-		 <Route path={PATH.GUIDE_LINES} element={<GuidelinesPage />}></Route>
+         <Route path={PATH.SIGNUP_PAGE} element={<SignUpPage />}></Route>
+         <Route path={PATH.GUIDE_LINES} element={<GuidelinesPage />}></Route>
          <Route path={PATH.SUCCESS_PAGE} element={<SuccessPage />}></Route>
          <Route path={PATH.FORGOT_PASSWORD_PAGE} element={<ForgotPassworPage />}></Route>
       </Routes>

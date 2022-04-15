@@ -1,0 +1,47 @@
+.signup-form {
+    max-width: 460px;
+    padding: 1.5rem;
+    margin-bottom:10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ced4da;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.signup-form-title {
+    margin: 0;
+}
+
+button.btn,
+input.form-control {
+    border-radius: 0;
+}
+
+.text-danger {
+    color: red;
+}
+
+.wrapper-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttton-login {
+    width: 150px;
+}
+
+.link-login {
+    margin-left: 45%;
+}
+
+.link-login a {
+    color: gray;
+    text-decoration: none;
+    font-weight: 500;
+    align-self: end;
+}
+
+.link-login a:hover {
+    color: black;
+    font-weight: bold;
+}
