@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import PATH from '../../routes/constants'
+import PATH from '../../routes/constants';
 import http from '../../../utils/api/http';
 import config from '../../../config';
 import './LoginForm.css';
