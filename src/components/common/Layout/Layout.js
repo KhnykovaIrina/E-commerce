@@ -7,9 +7,11 @@ const Layout = (props) => {
    return (
       <>
          <Header />
-         <div className='row'>
-            <div className='col-12'>
-               {props.children}
+         <div className="container">
+            <div className='row p-0'>
+               <div className='col-12'>
+                  {props.children}
+               </div>
             </div>
          </div>
          <Footer />

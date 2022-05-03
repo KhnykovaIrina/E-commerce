@@ -1,22 +1,42 @@
 .boxS {
   font-family: "Segoe UI", sans-serif;
   font-weight: 500;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
+  background-color: #EFF2F6;
+  padding-right: 120px;
+  padding-left: 120px;
+
 }
+
 .relative {
   width: 200px;
+  padding-right: 0;
 }
+
 .navbar-brand {
   padding-top: 0.2rem !important;
 }
-.colorLogin {
-  color: black !important;
-  font-family: "Segoe UI", sans-serif;
+.navbar-brand a{
+  color: black;
+  text-decoration: none;
 }
-.btnBag {
-  border: 0;
-  background: #f8f9fa;
-  padding-left: 28px;
-  margin-top: -2px;
+.avbar-brand a:hover {
+  color: gray
+}
+
+.wrapper-shopping-cart {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.wrapper-shopping-cart a {
+  color: black;
+  font-size: 18px;
+  font-family: "Segoe UI", sans-serif;
+  text-decoration: none;
+}
+
+.wrapper-shopping-cart a:hover {
+  color: gray
 }

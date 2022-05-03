@@ -7,7 +7,7 @@ import './ShoppingCartButton.css'
 const ShoppingCartButton = () => {
    const [value, setValue] = useState("")
    return (
-      <div>
+      <div className="wrapper-cart-button">
          <Link to={PATH.SHOPPING_CART_PAGE}>
             <Icon.Bag className="icon"/>
          </Link>

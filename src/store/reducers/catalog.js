@@ -1,13 +1,14 @@
 const intialState = {
    categories: [],
-   products:[],
-}
+   products: [],
+   isLoad:null,
+  }
 
 const catalogReducer = (state = intialState, action) => {
 
    switch (action.type) {
       case "SET_CATEGORIES":
-         return {
+         return {  
             ...state,
             categories: action.categories,
          };
@@ -15,7 +16,9 @@ const catalogReducer = (state = intialState, action) => {
          return {
             ...state,
             products: action.products,
+            isLoad:action.isLoad,
          };
+      
       default:
          return state
    }

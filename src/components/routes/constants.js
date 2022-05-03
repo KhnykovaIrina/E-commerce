@@ -16,6 +16,7 @@ const PATH = {
    RETURNS_AND_WARRANTY: "/returns_and_warranty",
    HELP_CENTER: "/help_center",
    ORDER_STATUS: "/order_status",
+   PRODUCT_PAGE:"/product",
    
 }
 export default PATH;

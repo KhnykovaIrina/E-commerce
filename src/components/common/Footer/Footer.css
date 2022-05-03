@@ -1,7 +1,9 @@
 .footer {
-   background: #FFF;
+   background: #f8f9fa;
    bottom: 0;
    width: 100%;
+   padding-top:20px;
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 .row {
@@ -11,11 +13,6 @@
 .form-control {
    border-right: none;
    border:1px solid #6c757d;
-}
-
- .btn-outline-secondary {
-   border-left: none;
-   background-color: white;
 }
 
 .list-link a:hover {

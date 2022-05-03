@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from "../../common/Layout";
+import LoadMoreButton from '../../elements/LoadMoreButton';
+import ProductList from '../../elements/ProductList';
 import "./CatalogPage.css";
 
 const CatalogPage = (props) => {
@@ -17,6 +19,11 @@ const CatalogPage = (props) => {
                   <p>{category.description}</p>
                </div>
             </div>
+            <ProductList category={category} />
+            <div className="wrapper-button-load">
+               <LoadMoreButton />
+            </div>
+
          </Layout>
 
       </>

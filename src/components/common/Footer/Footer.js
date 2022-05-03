@@ -10,12 +10,12 @@ const Footer = (props) => {
       <footer className="footer">
          <div className=" container-fluid">
             <div className="row ">
-               <div className=" col-lg-4 offset-lg-1 mb-3">
+               <div className="col-lg-4 offset-lg-1 mb-3">
                   <h3>Sign up for our newsletter</h3>
                   <p>Subscribe to our newsletter to get our latest news.</p>
                   <div className="input-group mb-3">
                      <input className="form-control" type="email" name="email" placeholder="Enter email address" />
-                     <button className="btn btn-outline-secondary " type="button">Sign up</button>
+                     <button  className="btn btn-outline-secondary" type="button">Sign up</button>
                   </div>
                </div>
                <div className="col-6 col-lg-2 mb-3">
