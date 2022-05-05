@@ -4,7 +4,7 @@ import "./ProductList.css"
 
 
 const ProductList = (props) => {
-   const { category, products } = props;
+   const {category,products} = props;
    useEffect(() => {
       props.fetchProducts(category.id)
    }, [category]);

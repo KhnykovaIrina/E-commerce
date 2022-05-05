@@ -1,9 +1,14 @@
 import NavBar from "./NavBar";
 import {connect} from "react-redux";
-import catalog from "../../../store/actions/catalog";
+import auth from '../../../store/actions/auth'
+
 
 export default connect(
     (state) => ({
-        categories: catalog.getListCategories(state),
+        state,
+         user:state.userReducer.user,
+    }),
+    (dispatch) => ({
+        logoutAccount: () => dispatch(auth.logoutAccount()),
     }),
 )(NavBar)

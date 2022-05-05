@@ -8,7 +8,7 @@ const Header = () => {
             <div className='banner'>
                 <div className='row'>
                     <div className='col-12'>
-                        <p className='text-banner'>FREE SHIPPING ON ALL HERMAN MILLER TILL 2022</p>
+                        <p className='text-banner p-0'>FREE SHIPPING ON ALL HERMAN MILLER TILL 2022</p>
                     </div>
                 </div>
             </div>

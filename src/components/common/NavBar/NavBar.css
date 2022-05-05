@@ -19,24 +19,23 @@
   color: black;
   text-decoration: none;
 }
-.avbar-brand a:hover {
+.navbar-brand a:hover {
   color: gray
 }
 
-.wrapper-shopping-cart {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 
-.wrapper-shopping-cart a {
+.form-cart-login a {
   color: black;
   font-size: 18px;
   font-family: "Segoe UI", sans-serif;
   text-decoration: none;
 }
 
-.wrapper-shopping-cart a:hover {
+.form-cart-logina:hover {
   color: gray
+}
+
+.nav-link:focus, .nav-link:hover {
+color:darkslategray;
+font-weight: 700;
 }

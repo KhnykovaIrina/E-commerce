@@ -1,2 +1,10 @@
+
 import ShoppingCartButton from "./ShoppingCartButton"
-export default ShoppingCartButton;
+import { connect } from "react-redux";
+import shoppingCart from "../../../store/actions/shoppingCart";
+
+export default connect(
+   (state) => ({
+      shoppingCart: shoppingCart.getShoppingCart(state),
+   }),
+)(ShoppingCartButton)
