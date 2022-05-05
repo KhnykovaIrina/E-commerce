@@ -1,12 +1,16 @@
-import React from  'react';
+import React from 'react';
+import Layout from '../../common/Layout'
 import SignUpForm from "../../forms/SignUpForm";
 import './SignUpPage.css';
 
+
 const SignUpPage = () => {
-    return  (
-        <div className='signup-page'>
-            <SignUpForm />
-        </div>
+    return (
+        <Layout>
+            <div className='signup-page'>
+                <SignUpForm />
+            </div>
+        </Layout>
     )
 }
 

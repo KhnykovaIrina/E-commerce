@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from 'react-router-dom';
-import { Navbar, Container, Nav, Form, FormControl } from "react-bootstrap";
+import { Navbar, Container, Nav, Form, FormControl, NavDropdown } from "react-bootstrap";
 import * as Icon from 'react-bootstrap-icons';
 import PATH from "../../routes/constants"
 import Menu from "../Menu";
@@ -9,6 +9,8 @@ import ShoppingCartButton from "../../elements/ShoppingCartButton/ShoppingCartBu
 
 
 const NavBar = (props) => {
+  const { user, logoutAccount } = props
+
 
   return (
     <>
@@ -46,12 +48,28 @@ const NavBar = (props) => {
                 />
               </Form>
             </Nav>
-            <div className="wrapper-shopping-cart">
+            <Form className="d-flex  form-cart-login">
+
+
+              {/* <div className="wrapper-shopping-cart"> */}
               <ShoppingCartButton />
-              <Link to={PATH.LOGIN_PAGE}>
-                Login
-              </Link>
-            </div>
+              {((user.id > 0) && (
+                <NavDropdown title={`Hello, ${user.fullname}`} id="basic-nav-dropdown">
+                  <NavDropdown.Item ><Link to="#">Your profile</Link></NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <Link className="dropdown-item" to={PATH.INDEX_PAGE} onClick={logoutAccount}><b>Log out</b></Link>
+                </NavDropdown>
+
+              ))}
+              {((!user.id) && (
+                <div style={{padding:"0.5rem 1rem"}}>
+                  <Link to={PATH.LOGIN_PAGE}>
+                    Login
+                  </Link>
+                </div>
+              ))}
+            </Form>
+         
           </Navbar.Collapse>
         </Container>
       </Navbar>

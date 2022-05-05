@@ -1,11 +1,14 @@
 import React from 'react';
 import PasswordRecoveryForm from '../../forms/PasswordRecoveryForm';
+import Layout from '../../common/Layout'
 
 const PasswordRecoveryPage = () => {
    return (
-      <div>
-         <PasswordRecoveryForm />
-      </div>
+      <Layout>
+         <div>
+            <PasswordRecoveryForm />
+         </div>
+      </Layout>
    );
 };
 

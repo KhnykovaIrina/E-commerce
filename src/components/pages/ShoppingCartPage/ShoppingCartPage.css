@@ -1,0 +1,17 @@
+.container-shopping-cart {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.continue-shopping {
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+   font-size: 16px;;
+}
+
+.continue-shopping:hover {
+   color: rgb(179, 176, 176);
+   font-weight: 800;
+
+}

@@ -1,32 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import PATH from '../../routes/constants';
-import http from '../../../utils/api/http';
-import config from '../../../config';
 import './LoginForm.css';
 
 const LoginForm = (props) => {
+   const { fetchAuth, user } = props
+   const navigate = useNavigate()
 
    const { register, formState: { errors }, handleSubmit } = useForm({
       mode: "onBlur",
       reValidateMode: "onChange",
    })
 
-      const onSubmit = async (data) => {
-      try {
-         const { user, token } = await http.post(`${config.url}/login`, data)
-         props.dispatch({ type: "USER_SESSION", payload: { user, token } });
-         console.log(props) 
-      } catch (response) {
-         console.error('Error from API', response.message);
+   useEffect(() => {
+      if (user.id > 0) {
+         navigate(PATH.INDEX_PAGE)
       }
+   }, [user]);
+   
+   if (user.id > 0) {
+    return null;
    }
 
    return (
-      <Form className='login-form' noValidate onSubmit={handleSubmit(onSubmit)}>
+      <Form className='login-form' noValidate onSubmit={handleSubmit(fetchAuth)}>
          <h3 className='login-form-title'>Welcome back</h3>
          <small className='text-muted'>Login with email</small>
          <br />

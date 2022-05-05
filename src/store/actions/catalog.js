@@ -20,8 +20,8 @@ const service = {
             sort: "variants.price",
             take: "10",
             skip: "0",
-        }
-        extraParams.query = id;
+		}
+        extraParams.query=id;
         const products = await catalogApi.getListProducts(extraParams);
         return dispatch({
             type: 'SET_PRODUCTS',
