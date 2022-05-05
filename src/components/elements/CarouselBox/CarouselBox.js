@@ -10,6 +10,7 @@ import Glass from "./image/glass.jpg";
 const CarouselBox = () => {
 
    return (
+      <div className="col">
       <div className='carousel'>
          <Carousel>
             <Carousel.Item>
@@ -41,6 +42,7 @@ const CarouselBox = () => {
                />
             </Carousel.Item>
          </Carousel>
+      </div>
       </div>
    );
 };

@@ -8,10 +8,11 @@ import PasswordRecoveryPage from '../pages/PasswordRecoveryPage';
 import SignUpPage from '../pages/SignUpPage/SignUpPage';
 import SuccessPage from '../pages/SuccessPage';
 import ForgotPassworPage from '../pages/ForgotPasswordPage';
+import CatalogPage from '../pages/CatalogPage';
 
 
 
-const ROUTES = () => {
+const RouteList = () => {
    return (
       <Routes>
          <Route path={PATH.INDEX_PAGE} element={<IndexPage />}></Route>
@@ -23,8 +24,10 @@ const ROUTES = () => {
          <Route path={PATH.GUIDE_LINES} element={<GuidelinesPage />}></Route>
          <Route path={PATH.SUCCESS_PAGE} element={<SuccessPage />}></Route>
          <Route path={PATH.FORGOT_PASSWORD_PAGE} element={<ForgotPassworPage />}></Route>
+         <Route path={PATH.CATALOG_PAGE} element={<CatalogPage/>}></Route>
+         <Route path={PATH.CATALOG_DETAIL} element={<CatalogPage/>}></Route>
       </Routes>
    );
 }
 
-export default ROUTES; 
+export default RouteList; 

@@ -8,16 +8,18 @@ import http from '../../../utils/api/http';
 import config from '../../../config';
 import './LoginForm.css';
 
-const LoginForm = () => {
+const LoginForm = (props) => {
 
    const { register, formState: { errors }, handleSubmit } = useForm({
       mode: "onBlur",
       reValidateMode: "onChange",
    })
 
-   const onSubmit = async (data) => {
+      const onSubmit = async (data) => {
       try {
          const { user, token } = await http.post(`${config.url}/login`, data)
+         props.dispatch({ type: "USER_SESSION", payload: { user, token } });
+         console.log(props) 
       } catch (response) {
          console.error('Error from API', response.message);
       }
