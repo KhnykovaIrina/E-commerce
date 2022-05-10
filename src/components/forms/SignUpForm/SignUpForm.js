@@ -27,11 +27,11 @@ const SignUpForm = (props) => {
             <br />
             <Form.Group className='mb-3'>
                 <Form.Label>Full Name*</Form.Label>
-                <Form.Control type='text' name='fullname' placeholder='Enter Full Name' {...register('fullname', { required: true, minLength: 5 })} />
-                {errors.fullname?.type === 'required' && (
+                <Form.Control type='text' name='fullName' placeholder='Enter Full Name' {...register('fullName', { required: true, minLength: 5 })} />
+                {errors.fullName?.type === 'required' && (
                     <Form.Text className='text-danger'>User name should be filled</Form.Text>
                 )}
-                {errors.fullname?.type === 'minLength' && (
+                {errors.fullName?.type === 'minLength' && (
                     <Form.Text className='text-danger'>Username at least have 5 letters</Form.Text>
                 )}
             </Form.Group>
