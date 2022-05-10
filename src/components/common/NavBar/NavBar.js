@@ -51,7 +51,7 @@ const NavBar = (props) => {
             <Form className="d-flex  form-cart-login">
               <ShoppingCartButton />
               {((user.id > 0) && (
-                <NavDropdown title={`Hello, ${user.fullname}`} id="basic-nav-dropdown">
+                <NavDropdown title={`Hello, ${user.fullName}`} id="basic-nav-dropdown">
                   <NavDropdown.Item ><Link to="#">Your profile</Link></NavDropdown.Item>
                   <NavDropdown.Divider />
                   <Link className="dropdown-item" to={PATH.INDEX_PAGE} onClick={logoutAccount}><b>Log out</b></Link>
