@@ -17,6 +17,7 @@ const PATH = {
    HELP_CENTER: "/help_center",
    ORDER_STATUS: "/order_status",
    PRODUCT_PAGE:"/product",
+   CHECKOUT: "/checkout",
    
 }
 export default PATH;

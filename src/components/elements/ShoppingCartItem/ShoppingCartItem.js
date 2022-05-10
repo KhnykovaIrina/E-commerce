@@ -1,16 +1,18 @@
 import React from 'react';
+import RemoveButton from '../RemoveButton';
 import './ShoppingCartItem.css';
 
 const ShoppingCartItem = (props) => {
-   const { item } = props
+   const {item} = props
    const variant = item.variant
-   
-   return (
+ 
+
+      return (
       <div className="row border-bottom">
-         <div className="row main">
-            <div className="card-item mb-3">
+         <div className="row">
+            <div className="card-item mb-3 p-0">
                <div className="row g-0">
-                  <div className="col-md-4  col-lg-3">
+                  <div className="col-4 col-md-4  col-lg-3">
                      <img src={`${variant.images[0]}?id=${variant.id}`} className="img-fluid rounded-start item-image" alt={variant.name} />
                   </div>
                   <div className="col-md-4">
@@ -21,9 +23,7 @@ const ShoppingCartItem = (props) => {
                         <p className="card-text mt-1 item-price">${item.variant.price}</p>
                      </div>
                   </div>
-                  <div className="col-4 col-md-4 d-flex d-flex justify-content-end ">
-                     <p className="text-decoration-underline  align-self-end  mb-0 ">Remove</p>
-                  </div>
+                  <RemoveButton item={item} />
                </div>
             </div>
          </div>

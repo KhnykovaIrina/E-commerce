@@ -49,9 +49,6 @@ const NavBar = (props) => {
               </Form>
             </Nav>
             <Form className="d-flex  form-cart-login">
-
-
-              {/* <div className="wrapper-shopping-cart"> */}
               <ShoppingCartButton />
               {((user.id > 0) && (
                 <NavDropdown title={`Hello, ${user.fullname}`} id="basic-nav-dropdown">
@@ -59,7 +56,6 @@ const NavBar = (props) => {
                   <NavDropdown.Divider />
                   <Link className="dropdown-item" to={PATH.INDEX_PAGE} onClick={logoutAccount}><b>Log out</b></Link>
                 </NavDropdown>
-
               ))}
               {((!user.id) && (
                 <div style={{padding:"0.5rem 1rem"}}>

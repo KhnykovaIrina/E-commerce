@@ -4,10 +4,7 @@ import * as Icon from 'react-bootstrap-icons';
 import PATH from '../../routes/constants';
 import './ShoppingCartButton.css'
 
-const ShoppingCartButton = (props) => {
-
-   const { shoppingCart } = props
-
+const ShoppingCartButton = () => {
 
    return (
       <div className="wrapper-cart-button">

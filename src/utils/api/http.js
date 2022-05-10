@@ -7,7 +7,7 @@ const http = {
          url,
          body,
          method: 'POST',
-         headers,
+         headers: getHeaders(headers),
       });
    },
 
@@ -16,7 +16,7 @@ const http = {
          url,
          queryParams,
          method: 'DELETE',
-         headers
+         headers: getHeaders(headers),
       });
    },
 
@@ -25,7 +25,7 @@ const http = {
          url,
          body,
          method: 'PUT',
-         headers,
+         headers: getHeaders(headers),
       });
    },
 
@@ -34,9 +34,20 @@ const http = {
          url,
          queryParams,
          method: 'GET',
-         headers,
+         headers: getHeaders(headers),
       });
    }
 };
 
+function getHeaders(props = {}) {
+   const headers = {};
+
+   Object.keys(props).forEach((name) => {
+       if (props[name]) {
+           headers[name] = props[name];
+       }
+   });
+
+   return headers;
+}
 export default http;

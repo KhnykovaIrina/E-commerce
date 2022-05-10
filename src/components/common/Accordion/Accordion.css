@@ -1,17 +1,17 @@
 .accordion {
-  max-width: 90%;
+  max-width: 100%;
   background-color: rgb(212, 211, 211);
   border: none;
   border-top: 2px solid rgb(80, 80, 80);
-  margin: 20px;
+  margin: 10px;
   margin-left: auto;
   margin-right: auto;
 }
-
+/* 
 .accordion-heading {
-  text-align: center;
+ ext-align: center;
   margin: 5px;
-}
+} */
 
 .item {
   background-color: white;

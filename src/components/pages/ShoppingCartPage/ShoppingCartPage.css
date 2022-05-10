@@ -1,17 +1,33 @@
-.container-shopping-cart {
-   margin-left: auto;
-   margin-right: auto;
+.wrapper-shopping-page {
+   padding: 20px 40px 20px 80px;
+
 }
 
 .continue-shopping {
    text-decoration: none;
    color: black;
    font-weight: 600;
-   font-size: 16px;;
+   font-size: 16px;
+   ;
 }
 
 .continue-shopping:hover {
    color: rgb(179, 176, 176);
-   font-weight: 800;
+   font-weight: 700;
 
+}
+
+.order-summary {
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.order-summary p {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.order-summary button {
+   width: 100%
 }

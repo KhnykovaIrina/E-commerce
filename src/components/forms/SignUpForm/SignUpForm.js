@@ -1,27 +1,24 @@
+import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
+import { Link, useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import PATH from '../../routes/constants';
-import http from '../../../utils/api/http';
-import config from '../../../config';
 import './SignUpForm.css';
 
-const SignUpForm = () => {
+const SignUpForm = (props) => {
+    const { createUser, user } = props
+   const navigate = useNavigate()
     const { register, formState: { errors }, handleSubmit } = useForm({
         mode: "onBlur",
         reValidateMode: "onChange"
     });
-
-    const createUser = async (values) => {
-        try {
-            const newUser = await http.post(`${config.url}/user`, values);
-            console.log('newUser', newUser);
-        } catch (response) {
-            console.error('Error from API', response.message);
+    useEffect(() => {
+        if (user.id > 0) {
+            navigate(PATH.LOGIN_PAGE);
         }
-    }
-
+    }, [user, navigate]);
+    
     return (
         <Form className='signup-form' noValidate onSubmit={handleSubmit(createUser)}>
             <h3 className='signup-form-title'>Register new user</h3>

@@ -7,7 +7,7 @@ const Accordion = ({accordionData}) => {
    
    return (
       <div>
-         <h3 className="accordion-heading">Order Infomation</h3>
+         <h5 className="mb-0">Order Infomation</h5>
          <div className="accordion">
             {accordionData.map((item, i) => (
                <div key={i} className="item">

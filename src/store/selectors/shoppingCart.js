@@ -1,0 +1,1 @@
+export const getShoppingCart = (state) => state.shoppingCartReducer.shoppingCart;

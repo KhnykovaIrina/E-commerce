@@ -1,14 +1,15 @@
 import { connect } from "react-redux";
 import LoginForm from "./LoginForm";
 import auth from "../../../store/actions/auth";
+import {getUser} from "../../../store/selectors/user"
 
 
 export default connect(
    (state) => ({
-      user: state.userReducer.user
+      user: getUser(state)
   }),
    (dispatch) => ({
-      fetchAuth: (email,password,rememberMe) => dispatch(auth.fetchAuth(email,password,rememberMe)),
+      fetchAuth: (payload) => dispatch(auth.fetchAuth(payload)),
   }),
  
 )(LoginForm)

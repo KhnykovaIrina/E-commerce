@@ -8,8 +8,8 @@ const Layout = (props) => {
       <>
          <Header />
          <div className="container">
-            <div className='row p-0'>
-               <div className='col-12'>
+            <div className='row m-0'>
+               <div className='col-12 p-0'>
                   {props.children}
                </div>
             </div>
