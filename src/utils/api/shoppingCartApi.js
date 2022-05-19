@@ -20,4 +20,24 @@ export default {
             Authorization: token
          })
      },
+     
+     addItem(id, payload, token) {
+      return http.post(
+          `${config.url}/shopping_cart/${id}/item`,
+          payload,
+          {
+              Authorization: token
+          }
+      );
+  },
+
+    updateItem(id, variant, payload, token) {
+      return http.put(
+          `${config.url}/shopping_cart/${id}/item/${variant}`,
+          payload,
+          {
+              Authorization: token
+          }
+      );
+  },
 }

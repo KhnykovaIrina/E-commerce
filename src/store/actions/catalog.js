@@ -1,5 +1,6 @@
 import catalogApi from '../../utils/api/catalogApi';
 import { getListCurrentProducts } from '../selectors/catalog';
+import productApi from "../../utils/api/productApi";
 
 const service = {
     fetchCategories: () => async (dispatch, getState) => {
@@ -49,6 +50,16 @@ const service = {
             isLoad,
         });
     },
+    fetchProduct: (id) => async (dispatch) => {
+        const product = await productApi.getEntity({id, extraParams: {
+                relations: ['variants', 'comments']
+            }});
+
+        return dispatch({
+            type: 'SET_PRODUCT',
+            product
+        });
+    },
 
     getListCategories: (state) => {
         return state
@@ -81,6 +92,11 @@ const service = {
         return state
             .catalogReducer
             .isLoad
+    },
+    getProduct: (state) => {
+        return state
+            .catalogReducer
+            .product
     }
 }
 

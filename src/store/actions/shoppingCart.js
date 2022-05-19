@@ -23,6 +23,30 @@ const service = {
         dispatch(service.fetchShoppingCart());
     },
 
+    addItem: (item, quantity) => async (dispatch, getState) => {
+        const state = getState();
+        const token = getToken(state);
+        const shoppingCart = getShoppingCart(state);
+
+        await shoppingCartApi.addItem(shoppingCart.id, {
+            variant: item.id,
+            quantity: quantity,
+        }, token);
+    },
+
+
+    updateItem: (item, quantity) => async (dispatch, getState) => {
+        const state = getState();
+        const token = getToken(state);
+        const shoppingCart = getShoppingCart(state);
+
+        await shoppingCartApi.updateItem(shoppingCart.id, item.id, {
+            variant: item.id,
+            quantity: quantity,
+        }, token);
+
+        dispatch(service.fetchShoppingCart());
+    },
 }
 
 export default service;

@@ -10,7 +10,7 @@ import SuccessPage from '../pages/SuccessPage';
 import ForgotPassworPage from '../pages/ForgotPasswordPage';
 import CatalogPage from '../pages/CatalogPage';
 import ShoppingCartPage from '../pages/ShoppingCartPage';
-
+import ProductPage from '../pages/ProductPage';
 
 
 const RouteList = () => {
@@ -25,9 +25,11 @@ const RouteList = () => {
          <Route path={PATH.GUIDE_LINES} element={<GuidelinesPage />}></Route>
          <Route path={PATH.SUCCESS_PAGE} element={<SuccessPage />}></Route>
          <Route path={PATH.FORGOT_PASSWORD_PAGE} element={<ForgotPassworPage />}></Route>
-         <Route path={PATH.CATALOG_PAGE} element={<CatalogPage/>}></Route>
-         <Route path={PATH.CATALOG_DETAIL} element={<CatalogPage/>}></Route>
-           </Routes >
+         <Route path={PATH.CATALOG_PAGE} element={<CatalogPage />}></Route>
+         <Route path={PATH.CATALOG_DETAIL} element={<CatalogPage />}></Route>
+         <Route path={PATH.PRODUCT_DETAIL} element={<ProductPage />} />
+      </Routes >
+
    );
 }
 

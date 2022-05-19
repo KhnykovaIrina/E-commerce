@@ -14,7 +14,7 @@ const ProductList = (props) => {
          <div className="row">
             {products.length > 0 &&
                products.map(product => {
-                  return <ProductCard key={product.id} product={product} />;
+                  return <ProductCard key={product.id} category={category} product={product} />;
                })}
          </div>
       </div>
