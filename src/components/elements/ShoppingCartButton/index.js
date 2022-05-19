@@ -1,3 +1,13 @@
+import { connect } from "react-redux";
+import ShoppingCartButton from "./ShoppingCartButton";
+import shoppingCart from "../../../store/actions/shoppingCart";
+import { getShoppingCart } from "../../../store/selectors/shoppingCart";
 
-import ShoppingCartButton from "./ShoppingCartButton"
-export default ShoppingCartButton;
+export default connect(
+   (state) => ({
+      shoppingCart: getShoppingCart(state),
+   }),
+   (dispatch) => ({
+      fetchShoppingCart: () => dispatch(shoppingCart.fetchShoppingCart()),
+   }),
+)(ShoppingCartButton)

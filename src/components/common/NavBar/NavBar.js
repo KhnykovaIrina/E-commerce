@@ -1,17 +1,15 @@
 import React from "react";
-import "./NavBar.css";
 import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav, Form, FormControl, NavDropdown } from "react-bootstrap";
 import * as Icon from 'react-bootstrap-icons';
 import PATH from "../../routes/constants"
 import Menu from "../Menu";
-import ShoppingCartButton from "../../elements/ShoppingCartButton/ShoppingCartButton"
-
+import ShoppingCartButton from "../../elements/ShoppingCartButton"
+import "./NavBar.css";
 
 const NavBar = (props) => {
-  const { user, logoutAccount } = props
-
-
+  const { user, logoutAccount} = props
+ 
   return (
     <>
       <Navbar
@@ -49,7 +47,7 @@ const NavBar = (props) => {
               </Form>
             </Nav>
             <Form className="d-flex  form-cart-login">
-              <ShoppingCartButton />
+              <ShoppingCartButton/>
               {((user.id > 0) && (
                 <NavDropdown title={`Hello, ${user.fullName}`} id="basic-nav-dropdown">
                   <NavDropdown.Item ><Link to="#">Your profile</Link></NavDropdown.Item>
@@ -58,14 +56,14 @@ const NavBar = (props) => {
                 </NavDropdown>
               ))}
               {((!user.id) && (
-                <div style={{padding:"0.5rem 1rem"}}>
+                <div style={{ padding: "0.5rem 1rem" }}>
                   <Link to={PATH.LOGIN_PAGE}>
                     Login
                   </Link>
                 </div>
               ))}
             </Form>
-         
+
           </Navbar.Collapse>
         </Container>
       </Navbar>

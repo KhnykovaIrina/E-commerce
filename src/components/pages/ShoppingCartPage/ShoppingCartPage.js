@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Layout from "../../common/Layout";
 import { Link, useNavigate } from 'react-router-dom'
 import ShoppingCartItemsList from '../../elements/ShoppingCartItemsList';
@@ -8,12 +8,8 @@ import Accordion from '../../common/Accordion';
 import OrderSummary from "../../elements/OrderSummary"
 
 const ShoppingCartPage = (props) => {
-   const { shoppingCart, fetchShoppingCart } = props;
+   const { shoppingCart } = props;
    const navigate = useNavigate()
-
-   useEffect(() => {
-      fetchShoppingCart();
-   }, []);
    const items = shoppingCart.items
 
    return (

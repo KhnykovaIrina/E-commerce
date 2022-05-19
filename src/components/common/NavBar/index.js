@@ -1,12 +1,10 @@
 import NavBar from "./NavBar";
-import {connect} from "react-redux";
-import auth from '../../../store/actions/auth'
-
-
+import { connect } from "react-redux";
+import auth from '../../../store/actions/auth';
+ 
 export default connect(
     (state) => ({
-        state,
-         user:state.userReducer.user,
+        user: state.userReducer.user,
     }),
     (dispatch) => ({
         logoutAccount: () => dispatch(auth.logoutAccount()),
