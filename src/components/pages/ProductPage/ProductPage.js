@@ -3,7 +3,6 @@ import {useParams} from 'react-router-dom';
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Layout from "../../common/Layout";
-import './style.scss';
 
 const ProductPage = (props) => {
     const params = useParams();
