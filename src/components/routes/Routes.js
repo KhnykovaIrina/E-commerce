@@ -10,6 +10,7 @@ import SuccessPage from '../pages/SuccessPage';
 import ForgotPassworPage from '../pages/ForgotPasswordPage';
 import CatalogPage from '../pages/CatalogPage';
 import ShoppingCartPage from '../pages/ShoppingCartPage';
+import CheckoutAddressPage from '../pages/CheckoutAddressPage';
 import ProductPage from '../pages/ProductPage';
 
 
@@ -27,7 +28,9 @@ const RouteList = () => {
          <Route path={PATH.FORGOT_PASSWORD_PAGE} element={<ForgotPassworPage />}></Route>
          <Route path={PATH.CATALOG_PAGE} element={<CatalogPage />}></Route>
          <Route path={PATH.CATALOG_DETAIL} element={<CatalogPage />}></Route>
+         <Route path={PATH.CHECKOUT_ADDRESS} element={<CheckoutAddressPage />}></Route>
          <Route path={PATH.PRODUCT_DETAIL} element={<ProductPage />} />
+
       </Routes >
 
    );

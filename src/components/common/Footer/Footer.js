@@ -14,7 +14,7 @@ const Footer = (props) => {
                   <h3>Sign up for our newsletter</h3>
                   <p>Subscribe to our newsletter to get our latest news.</p>
                   <div className="input-group mb-3">
-                     <input className="form-control" type="email" name="email" placeholder="Enter email address" />
+                     <input className="form-control border-end-0" type="email" name="email" placeholder="Enter email address" />
                      <button  className="btn btn-outline-secondary" type="button">Sign up</button>
                   </div>
                </div>

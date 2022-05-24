@@ -50,7 +50,7 @@ input.form-control {
    font-weight: 500;
 }
 
-.form-check {
+.checkbox-remember{
    max-width: 150px;
    align-self: start;
    padding-left: 0;

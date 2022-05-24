@@ -18,7 +18,6 @@ const service = {
         const state = getState();
         const token = getToken(state);
         const shoppingCart = getShoppingCart(state);
-        console.log(token, item, shoppingCart)
         await shoppingCartApi.deleteItem(shoppingCart.id, item.id, token);
         dispatch(service.fetchShoppingCart());
     },

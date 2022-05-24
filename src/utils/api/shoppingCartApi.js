@@ -20,7 +20,7 @@ export default {
             Authorization: token
          })
      },
-     
+
      addItem(id, payload, token) {
       return http.post(
           `${config.url}/shopping_cart/${id}/item`,

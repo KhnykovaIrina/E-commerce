@@ -19,8 +19,7 @@ const service = {
         }
     },
     setUser: (user) => (dispatch) => {
-        dispatch({type: 'SET_USER', user})
-
+        dispatch({ type: 'SET_USER', user })
         return localStorage.setItem('user', JSON.stringify(user));
     },
 }

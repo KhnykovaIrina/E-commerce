@@ -11,3 +11,4 @@ export default connect(
       fetchShoppingCart: () => dispatch(shoppingCart.fetchShoppingCart()),
    }),
 )(ShoppingCartButton)
+

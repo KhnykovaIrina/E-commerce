@@ -7,9 +7,11 @@ import Menu from "../Menu";
 import ShoppingCartButton from "../../elements/ShoppingCartButton"
 import "./NavBar.css";
 
+
 const NavBar = (props) => {
-  const { user, logoutAccount} = props
- 
+  const { user, logoutAccount } = props
+
+
   return (
     <>
       <Navbar
@@ -47,7 +49,7 @@ const NavBar = (props) => {
               </Form>
             </Nav>
             <Form className="d-flex  form-cart-login">
-              <ShoppingCartButton/>
+              <ShoppingCartButton />
               {((user.id > 0) && (
                 <NavDropdown title={`Hello, ${user.fullName}`} id="basic-nav-dropdown">
                   <NavDropdown.Item ><Link to="#">Your profile</Link></NavDropdown.Item>
@@ -63,8 +65,7 @@ const NavBar = (props) => {
                 </div>
               ))}
             </Form>
-
-          </Navbar.Collapse>
+           </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

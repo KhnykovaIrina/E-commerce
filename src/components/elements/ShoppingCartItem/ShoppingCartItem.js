@@ -9,7 +9,7 @@ const ShoppingCartItem = (props) => {
 
       return (
       <div className="row border-bottom">
-         <div className="row">
+         <div className="row ps-3">
             <div className="card-item mb-3 p-0">
                <div className="row g-0">
                   <div className="col-4 col-md-4  col-lg-3">

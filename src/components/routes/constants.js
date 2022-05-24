@@ -19,6 +19,7 @@ const PATH = {
    PRODUCT_PAGE:"/product",
    PRODUCT_DETAIL: "/catalog/:id/product/:productId",
    CHECKOUT: "/checkout",
-   
+   CHECKOUT_ADDRESS: "/checkout_address",
+   CHECKOUT_SHIPPING: "/checkout_shipping",
 }
 export default PATH;

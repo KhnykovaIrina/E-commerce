@@ -51,7 +51,7 @@ const LoginForm = (props) => {
          </Form.Group>
          <Form.Group className="mb-3 checkbox-wrapper">
             <Form.Group className="mb-3">
-               <Form.Check type="checkbox" label="Remember me" {...register('rememberMe')} />
+               <Form.Check type="checkbox" className="checkbox-remember" label="Remember me" {...register('rememberMe')} />
             </Form.Group>
             <div className="mb-3 link-recovery-password">
                <Link to={PATH.PASSWORD_RECOVERY_PAGE} >Forget password? </Link>

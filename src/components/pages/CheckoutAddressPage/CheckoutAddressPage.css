@@ -1,0 +1,39 @@
+.wrapper-checkout-page {
+   padding: 20px 40px 20px 80px;
+
+}
+
+.checkout-description {
+   overflow: hidden;
+   text-align: center;
+   display:flex;
+   justify-content: space-between;
+   
+  }
+
+.checkout-description span {
+
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.description-item:before,
+.description-item:after {
+   content: "";
+   display: inline-block;
+   vertical-align: middle;
+   width: 100%;
+   height: 1px;
+   background-color: #646464;
+   position: relative;
+}
+
+.description-item:before {
+   margin-left: -100%;
+   left: -20px;
+}
+
+.description-item:after {
+   margin-right: -100%;
+   right: -20px;
+}
