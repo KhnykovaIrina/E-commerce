@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import PATH from '../../routes/constants'
 import './style.scss';
 
 const Menu = (props) => {
-    useEffect(() => {
-        props.fetchCategories()
-    },[]);
-    const { categories } = props;
+      const { categories } = props;
 
     return (
         <div className='header_menu'>

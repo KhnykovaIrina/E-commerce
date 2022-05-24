@@ -1,0 +1,63 @@
+.image-gallery-right-nav,
+.image-gallery-left-nav {
+   .image-gallery-svg {
+      height: 30px;
+   }
+}
+
+.image-gallery-fullscreen-button .image-gallery-svg {
+   width: 20px;
+   height: 20px;
+}
+
+.product {
+
+   &_page {
+      padding: 2.5rem 0;
+
+
+      .fit_guide {
+         color: #333;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+         text-decoration: none;
+         cursor: pointer;
+
+         &:hover {
+            border-bottom: 1px solid transparent;
+         }
+      }
+   }
+
+   &_price {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+   }
+
+   &_description {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+   }
+
+   &_variants {
+      
+   }
+
+   &_button.btn.btn-dark {
+      width: 100%;
+
+      &:hover {
+         background: #333;
+      }
+   }
+}
+
+.title {
+   color: gray;
+}
+
+.button-color {
+   width: 50px;
+ height: 50px;
+}

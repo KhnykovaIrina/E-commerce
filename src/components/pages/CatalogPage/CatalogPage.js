@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from "../../common/Layout";
 import LoadMoreButton from '../../elements/LoadMoreButton';
@@ -9,17 +9,25 @@ const CatalogPage = (props) => {
    const params = useParams();
    const id = +params.id;
    const category = props.getCategoryById(id);
+   const {fetchProducts, products}=props
+   useEffect(() => {
+      if (!products.length) {
+          fetchProducts(id);
+      }
 
+  }, [products]);
    return (
       <>
          <Layout>
-            <div className="box">
-               <div className="box-scroll">
-                  <h3>{category.name}</h3>
-                  <p>{category.description}</p>
+            {((category) && (
+               <div className="box">
+                  <div className="box-scroll">
+                     <h3>{category.name}</h3>
+                     <p>{category.description}</p>
+                  </div>
                </div>
-            </div>
-            <ProductList category={category} />
+            ))}
+            <ProductList products={products} />
             <div className="wrapper-button-load">
                <LoadMoreButton />
             </div>

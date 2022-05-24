@@ -4,17 +4,14 @@ import "./ProductList.css"
 
 
 const ProductList = (props) => {
-   const {category,products} = props;
-   useEffect(() => {
-      props.fetchProducts(category.id)
-   }, [category]);
-
+   const {products} = props;
+  
    return (
      <div className="container-product-list">
          <div className="row">
             {products.length > 0 &&
                products.map(product => {
-                  return <ProductCard key={product.id} category={category} product={product} />;
+                  return <ProductCard key={product.id} product={product} />;
                })}
          </div>
       </div>

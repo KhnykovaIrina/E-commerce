@@ -1,18 +1,11 @@
-.counter {
-   padding: 0;
-   margin: 10px;
-   width: 150px;
-   padding: 10px;
-   margin-left: auto;
-   margin-right: auto;
-}
+
 .counter-wrapper {
    margin: 0;
    padding: 0;
+   width:120px;
    border: 1px solid rgb(124, 123, 123);
    display: flex;
    align-items: center;
-   border-radius: 5px;
 }
 
 .input {
@@ -24,17 +17,10 @@
    font-size: 20px;
 }
 
- .title {
-   font-size: 25px;
-   color: gray;
-   text-align: left;
-}
 
 .button {
    background: none;
    border: none;
-   padding: 0.8rem;
-   font-size: 25px;
    outline: none;
    font-weight: bold;
 }

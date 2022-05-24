@@ -6,7 +6,5 @@ export default connect(
     (state) => ({
          products: catalog.getListOfProducts(state),
     }),
-    (dispatch) => ({
-        fetchProducts: (id) => dispatch(catalog.fetchProducts(id)),
-    }),
+   
 )(ProductList)

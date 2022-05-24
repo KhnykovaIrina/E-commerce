@@ -9,6 +9,7 @@ const ShoppingCartButton = (props) => {
    useEffect(() => {
       fetchShoppingCart();
    }, [fetchShoppingCart]);
+   
    const totalItems = shoppingCart.items?.length;
 
    return (

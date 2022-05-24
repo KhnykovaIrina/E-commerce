@@ -31,9 +31,7 @@ const ShoppingCartPage = (props) => {
                      </div>
                   </div>
                   <div className='col-12 col-md-6 px-5 order-summary' >
-
                      <div className="mb-3"><h4>Order Summary</h4></div>
-
                      <OrderSummary shoppingCart={shoppingCart} />
                      <button type="button" onClick={() => navigate(PATH.CHECKOUT_ADRESS)} className="btn btn-dark" disabled={items.length === 0}>Continue to checkout</button>
                   </div>

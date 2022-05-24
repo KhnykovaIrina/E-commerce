@@ -40,7 +40,6 @@ const service = {
         const shoppingCart = getShoppingCart(state);
 
         await shoppingCartApi.updateItem(shoppingCart.id, item.id, {
-            variant: item.id,
             quantity: quantity,
         }, token);
 
