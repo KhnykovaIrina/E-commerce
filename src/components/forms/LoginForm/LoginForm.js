@@ -37,7 +37,7 @@ const LoginForm = (props) => {
                <Form.Text className='text-danger'>Email address should be filled</Form.Text>
             )}
             {errors.email?.type === 'pattern' && (
-               <Form.Text className='text-danger'>Your password is not correct, try again</Form.Text>
+               <Form.Text className='text-danger'>Your email is not correct, try again</Form.Text>
             )}
          </Form.Group>
          <Form.Group className="mb-3" >
