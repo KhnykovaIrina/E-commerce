@@ -19,7 +19,7 @@ const service = {
             query: "",
             relations: "variants",
             sort: "variants.price",
-            take: "10",
+            take: "12",
             skip: "0",
 		}
         extraParams.query=id;
@@ -35,7 +35,7 @@ const service = {
         let params = {
             relations: "variants",
             sort: "variants.price",
-            take: "10",
+            take: "12",
             skip: "0",
         }
         params.skip = currentProducts.length

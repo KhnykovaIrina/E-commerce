@@ -37,16 +37,16 @@ const LoginForm = (props) => {
                <Form.Text className='text-danger'>Email address should be filled</Form.Text>
             )}
             {errors.email?.type === 'pattern' && (
-               <Form.Text className='text-danger'>Please Enter a valid email address</Form.Text>
+               <Form.Text className='text-danger'>Your password is not correct, try again</Form.Text>
             )}
          </Form.Group>
          <Form.Group className="mb-3" >
             <Form.Control type="password" name="password" placeholder="Password" {...register('password', { required: true, pattern: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/i })} />
             {errors.password?.type === 'required' && (
-               <Form.Text className='text-danger'>Password should be filled</Form.Text>
+               <Form.Text className='text-danger'>Password must be at least 8 characters including uppercase, lowercase letters and numbers</Form.Text>
             )}
             {errors.password?.type === 'pattern' && (
-               <Form.Text className='text-danger'>Password should contains atleast 8 charaters and containing uppercase,lowercase and numbers</Form.Text>
+               <Form.Text className='text-danger'>Your password is not correct, try again</Form.Text>
             )}
          </Form.Group>
          <Form.Group className="mb-3 checkbox-wrapper">
@@ -54,7 +54,7 @@ const LoginForm = (props) => {
                <Form.Check type="checkbox" label="Remember me" {...register('rememberMe')} />
             </Form.Group>
             <div className="mb-3 link-recovery-password">
-               <Link to={PATH.PASSWORD_RECOVERY_PAGE} >Forget rassword?</Link>
+               <Link to={PATH.PASSWORD_RECOVERY_PAGE} >Forget password? </Link>
             </div>
          </Form.Group>
          <Form.Group className="mb-3 checkbox-wrapper">
